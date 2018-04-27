@@ -1,0 +1,234 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Validate login",
+        "description": "",
+        "id": "amazon;validate-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9553966783,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on amazon website",
+            "match": {
+              "location": "AmazonSteps.open_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1283051040,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "AmazonSteps.click_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193680516,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter 9739889368 as username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9739889368",
+                  "offset": 8
+                }
+              ],
+              "location": "AmazonSteps.enter_user_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1034058202,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on contine button",
+            "match": {
+              "location": "AmazonSteps.click_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168369474,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter 9934978027 as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9934978027",
+                  "offset": 8
+                }
+              ],
+              "location": "AmazonSteps.enter_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3174919049,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on login",
+            "match": {
+              "location": "AmazonSteps.click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175883930,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should be logged in as \"Santosh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Santosh\"",
+                  "offset": 25
+                }
+              ],
+              "location": "AmazonSteps.validte_looged_user(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Add a product to wish list",
+        "description": "",
+        "id": "amazon;add-a-product-to-wish-list;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35059582,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I am logged in as \"Santosh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Santosh\"",
+                  "offset": 18
+                }
+              ],
+              "location": "AmazonSteps.validte_looged_user(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3945468014,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I Search Nike tshirt",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nike tshirt",
+                  "offset": 9
+                }
+              ],
+              "location": "AmazonSteps.search_an_item(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 902678073,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 30,
+                "value": "#\tAnd I refine price range as \u003cPriceRange\u003e"
+              },
+              {
+                "line": 31,
+                "value": "#\tAnd I refine clothing and accessories for \u003cGenderAndAge\u003e"
+              }
+            ],
+            "line": 32,
+            "name": "I select Nike Off White Test Polo Cricket Tshirts",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nike Off White Test Polo Cricket Tshirts",
+                  "offset": 9
+                }
+              ],
+              "location": "AmazonSteps.select_an_item(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "I add product to the wishlist",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 34,
+            "name": "I navigate to wishlist",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "I should see Nike Off White Test Polo Cricket Tshirts added in wishlist",
+            "match": {},
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon",
+    "description": "As a customer \r\nI want to place an order\r\nSo that I receive the product",
+    "id": "amazon",
+    "keyword": "Feature",
+    "uri": "E:/CucumberJVMExamples-master/cucumberjvm-selenium-page-object/src/test/resources/features/Amazon.feature"
+  }
+]

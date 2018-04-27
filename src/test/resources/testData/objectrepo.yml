@@ -1,0 +1,10 @@
+loginpage:
+    menulist://span[@class='nav-line-2' and .='Your Orders']
+    signin://div[@id='nav-flyout-yourAccount']//span[@class='nav-action-inner' and .='Sign in']
+    username:ap_email
+    continue:input#continue
+    password:input#ap_password
+    login:signInSubmit
+    loggedusername:a#nav-link-yourAccount span.nav-line-1
+homepage:
+    
