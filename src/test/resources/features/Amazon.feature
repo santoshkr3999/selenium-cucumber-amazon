@@ -12,17 +12,17 @@ Scenario: Validate login
 	And I click on login 
 	Then I should be logged in as "Santosh" 
 	
-#Scenario Outline: Add a product to cart 
-#	Given I am logged in as "Santosh" 
-#	And I Search Studds 
-#	And I select <ItemName> 
-#	And I navigate to new tab 
-#	And I add the product to cart 
-#	And I navigate to cart 
-#	Then I should see <ItemName> added in the cart 
-#	Examples: 
-#		|ItemName												  |
-#		|Studds Marshall SUS_MOFH_BLKL Open Face Helmet (Black, L)|
+Scenario Outline: Add a product to cart 
+	Given I am logged in as "Santosh" 
+	And I Search Studds 
+	And I select <ItemName> 
+	And I navigate to new tab 
+	And I add the product to cart 
+	And I navigate to cart 
+	Then I should see <ItemName> added in the cart 
+	Examples: 
+		|ItemName												  |
+		|Studds Marshall SUS_MOFH_BLKL Open Face Helmet (Black, L)|
 		
 Scenario Outline: Verify magnified image of a product 
 	Given I am logged in as "Santosh" 
