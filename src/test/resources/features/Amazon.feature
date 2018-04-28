@@ -6,9 +6,9 @@ So that I receive the product
 Scenario: Validate login 
 	Given I am on amazon website 
 	When I click on sign in button 
-	And I enter 9739889368 as username 
+	And I enter xxxxxx as username 
 	And I click on contine button 
-	And I enter 9934978027 as password 
+	And I enter xxxxx as password 
 	And I click on login 
 	Then I should be logged in as "Santosh" 
 	
